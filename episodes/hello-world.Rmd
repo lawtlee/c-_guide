@@ -1,0 +1,131 @@
+---
+title: 'Hello World'
+teaching: 20
+exercises: 2
+---
+
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- How do you run a C++ program and write simple code?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Explain how to compile the code that was written
+- Show simple C++ code and give an explanation
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Introduction
+
+C++ is a vast and difficult language to approach. However, with easy step by step code analysis, 
+we hope that you can easily understand and interpret code on your own eventually writing it yourself.
+This Episode will go over the most basic C++ code, the Hello World file.
+
+## Hello World
+
+Hello World is the most basic C++ program that every beginner goes through in their journey to mastering C++.
+I will display the code below and go step by step how each line of code works. Some explanations will be 
+very brief as we will go into more detail in later exercises.
+
+```{cpp}
+#include <iostream>
+using namespace std;
+int main(){
+  cout << "Hello World!" << std::endl;
+}
+```
+
+The code above is the code for the Hello World program. Copy or type out this code into your Intro.cpp file.
+In a little bit you will run this file in order to see what it does, but for now we will go over and analyze what exactly this code does line by line.
+
+-----
+
+### Line 1
+Line one has the following code `#include <iostream>`. When writing programs there will be times where you 
+will use pre-written code, this is called a library. In C++ the way to include a library is to use the
+`#include` keyword that allows you to use a library. What is a library? A library is a collection of code
+that has already been written. The functionality of the library is documented based on where you download
+the library. The library being used in this program, `<iostream>` is a library that comes with the C++ 
+compiler. It holds a lot of code that allow you to interact with the user through the command line or terminal that we had previously opened.
+
+The `<iostream>` library gives us access to two functions or operators, `cout` and `endl`. The `cout` function allows us to **output** information into the command line. The `endl` function translates to
+end-line which will create a line break or "new-line".
+
+In C++ libraries are an important and powerful tool that will save you thousands of lines of code. People
+have worked with the source for decades and have produced powerful ready-to-use tools so you don't have to.
+
+-----
+
+### Line 2
+In line 2 you can see the code `using namespace std;`. A namespace is sort of a unique identifier. For every
+library you use, there may be a different namespace associated with a certain function. An analogy would be
+last names. You have James Jones and James Worthy. If you looked at the first name only, you wouldn't be able to differentiate between the two. However, by looking at their last names you will be able to uniquely identify them. Of course this wouldn't work if they both have the same last name but, C++ does not allow the same namespace to contain the same function. Therefore you can think of the namespace as a way to uniquely identifying a function.
+
+Now in this code, without `using namespace std;` means that in your file, any function that originates from the `namespace std` would have to be prefixed with `std`. You can see this in `std::endl`. However, if you use `using namespace std;` you don't have to prefix all of the `std` code with std, instead you can do what was done earlier in the line with `cout`. This line allows you to not have to prefix every function from the `std namespace` with `std::` and will help save you time as you write more code.
+
+::: challenge
+
+## Challenge 1: Namespaces
+Are the following the same: `std::cout`, `os::cout`?
+
+::: solution
+
+No, they are different as they belong to two different namespaces. One belongs to `std` and the other to `os`. If they had the same prefix then they would be the same.
+
+:::
+
+:::
+
+
+-----
+
+### Lines 3-5
+In lines 3-5 you have the main functionality of the program. For every C++ program to run, you must have a `main` function. This is because the C++ compiler will only run what is inside of the main function. In this program, we have the main function as `int main()` which tells the compiler to run what is inside of this function.
+The content of the function is contained inside of the **{}**.
+
+The content written inside of the main function is `cout << "Hello World! << std::endl`. Now lets look at what this does. The `cout` portion of the code allows you to output words, values, variables, etc. into the terminal or command line. Here, we want to output **Hello World!** followed by an `endl` which was described before. This is the code that will be ran when you start your program.
+
+## Running Hello World
+
+Now that you have the program ready and understand the functionality behind it, we will run it. There are two ways to run it, directly through your terminal or through VSCode. The VSCode approach is much easier as the editor will write out the command for you.
+
+------
+
+### VSCode
+To use VSCode to run your program, look to the top-right of the editor. There you should see a little play button. Either click directly on the arrow or find the down-arrow next to it and click on it and press **Run**. Now you will see the code run and see what it does.
+
+------
+
+### Terminal
+To run the code in the terminal, you first must compile the code. In this section when you see **{name}** you must replace the name with what is specified. In order to run C++ code, it must be compiled first. You can do this with the following shell code. Type it into your terminal.
+
+```bash
+g++ {name_of_file} -o {custom_name_of_exectuable}
+./{custom_name_of_executable}
+```
+
+This code will create an executable to run your c++ code. You replace {custom_name_of_executable} with whatever you would like it to be called. Now the `g++` portion of the code takes the "g++" compiler and compiles the C++ code into an executable. Natively, you cannot run C++ code by itself, you must compile it first. Compilers are a very complicated topic so we won't go into detail but know that it is a necessary step in making a C++ program. The `-o {custom_name_of_executable}` gives your file a name. Finally, the `./{custom_name_of_executable}` runs the code. Now you are able to run the Hello World program and understand what each line does.
+
+::: challenge
+
+## Challenge 2
+
+What does this code do?
+
+::: solution
+
+This code will output "Hello World!" into the terminal/command-line.
+
+:::
+
+:::
+
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- Namespaces and libraries are powerful tools that can shorten your code by millions of lines
+- You must have a main function and compile your file before running your code
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
