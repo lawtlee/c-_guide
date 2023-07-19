@@ -2,53 +2,35 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
-
-## Data Sets
-
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
-
 ## Software Setup
-
-::::::::::::::::::::::::::::::::::::::: discussion
 
 ### Details
 
-Setup for different systems can be presented in dropdown menus via a `solution`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+There are many different programs you can use to run C++ code. However, in this workshop we will be using Microsoft's [Visual Studio Code](https://code.visualstudio.com/download). It is a lightweight integrated development environment (IDE) that has a lot of customization options.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::
+### Visual Studio
+After installing VSCode, you have to setup the environment for C++. First, you should check whether or not your computer has C++ installed. You will need to open the terminal, a quick access to your computer's command system.
 
-:::::::::::::::: solution
+:::::::::::::::::: discussion
 
-### Windows
+### Terminal
 
-Use PuTTY
-
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-
-### MacOS
-
-Use Terminal.app
-
-:::::::::::::::::::::::::
+You can either open the terminal by going to the top of VSCode and clicking on Terminal->New Terminal. There are also keyboard shortcuts that are displayed below.
 
 
-:::::::::::::::: solution
+#### Windows
+<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>T</kbd>
 
-### Linux
+#### Mac
+<kbd>ctrl</kbd> + <kbd>option</kbd> + <kbd>~</kbd>
 
-Use Terminal
+#### Linux
+Look up for your specific Linux system
 
-:::::::::::::::::::::::::
+:::::::::::::::::: 
+
+Now with your terminal open, type in "c++ -v" and hit enter to see the version of C++ installed on your 
+device. If nothing shows up, please look up how to download C++ for your respective OS/medium. 
+With this, you are now able to move on.
+
 
