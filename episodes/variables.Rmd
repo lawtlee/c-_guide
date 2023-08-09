@@ -1,0 +1,46 @@
+---
+title: "Variables"
+teaching: 30
+exercises: 2
+---
+
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- What is a variable in C++ and how do you create one?
+- What are variables used for?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Explain what a variable is
+- Demonstrate how to use variables and their use cases
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Introduction
+
+So far, we have covered how to navigate and build your very first C++ program. Now we will dive deeper into the language and computer programming
+with variables. Variables are powerful tools in programming as they allow you to store data and information that can be used repeatedly and later
+on. C++ has some strict rules for variables that may set it apart from other languages but lead to high performance yields.
+
+## Variables
+
+How are numbers, values, sentences, and characters stored in C++? We store these values in **variables**. Variables are used to store values and
+and can be changed throughout a program. Variables are the core of computer programming and is a universal thing throughout all programming
+languages.
+
+We store variables in the following format in C++:
+```{cpp}
+int               variable
+^                 ^
+|                 |
+Variable Type     Variable name
+```
+
+
+
+
+
+
+
